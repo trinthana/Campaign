@@ -1,0 +1,3 @@
+module Campaign
+
+go 1.22.1
