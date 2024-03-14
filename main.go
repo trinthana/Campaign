@@ -14,7 +14,8 @@ type Message struct {
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello Go Application")
+		fmt.Fprintf(w, "Hello, this site is for generate marketing campaigns and other marketing stuffs.")
+		fmt.Fprintf(w, " I do highly recommend you to leave.")
 	})
 
 	http.HandleFunc("/name", func(w http.ResponseWriter, r *http.Request) {
