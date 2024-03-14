@@ -42,6 +42,6 @@ func main() {
 		}
 	})
 
-	log.Println("Server starting on port 8081...")
-	log.Fatal(http.ListenAndServe(":8081", nil))
+	log.Println("Server starting on port 443...")
+	log.Fatal(http.ListenAndServe(":443", nil))
 }
