@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 )
@@ -12,6 +13,10 @@ type Message struct {
 }
 
 func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Hello Go Application")
+	})
+
 	http.HandleFunc("/name", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			var msg Message
